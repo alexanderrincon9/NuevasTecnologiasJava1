@@ -17,6 +17,8 @@ public class Empleado {
    public String cedula;
    public int salario;
    public String direccion;
+   public String Barrio;
+   int cantidad ;
    
    
    // metodos = acciones = funciones
@@ -35,6 +37,17 @@ public class Empleado {
         this.direccion = direccion;
     }
    
+    
+    
+    public double calcularSalario (int cantidadLicencias){
+        
+        int comision = cantidadLicencias*500000;
+        double salarioComision=comision+this.salario;
+        double deducciones = salarioComision*0.13;
+        double salario = salarioComision - deducciones;
+    
+    return salario;
+    }
    
     
 }

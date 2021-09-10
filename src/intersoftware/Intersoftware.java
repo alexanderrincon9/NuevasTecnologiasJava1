@@ -37,8 +37,16 @@ public class Intersoftware {
         Empleado objeto3 = new Empleado("Benito","98713479",4000000,"calle 107 # 107-82");
         System.out.println("Nombre: "+objeto3.nombre);
          System.out.println("Cedula: "+objeto3.cedula);
-          System.out.println("Salario: "+objeto3.salario);
+         // System.out.println("Salario: "+objeto3.salario);
            System.out.println("Direccion: "+objeto3.direccion);
+           
+           Empleado calcularSalario = new Empleado();
+           
+         
+                 System.out.println("salario: "+calcularSalario.salario);
+                 
+              
+           
       
         
     }
